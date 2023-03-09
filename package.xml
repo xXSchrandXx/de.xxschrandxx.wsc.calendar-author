@@ -4,7 +4,7 @@
 	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/package.xsd">
 	<packageinformation>
 		<packagename><![CDATA[Calendar Author]]></packagename>
-		<packagedescription><![CDATA[Lässt bei einem Event einen anderen User als Author auswählen.]]></packagedescription>
+		<packagedescription><![CDATA[Allows another user to be selected as the author for an event.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Lässt bei einem Event einen anderen User als Author auswählen.]]></packagedescription>
 		<version>1.0.0</version>
 		<date>2023-03-08</date>
