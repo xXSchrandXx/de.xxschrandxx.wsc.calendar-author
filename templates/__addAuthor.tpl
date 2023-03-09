@@ -1,5 +1,5 @@
 <dl{if $errorField == 'username'} class="formError"{/if}>
-	<dt><label for="username">{lang}wcf.acp.article.author{/lang}</label></dt>
+	<dt><label for="username">{lang}calendar.event.author{/lang}</label></dt>
 	<dd>
 		<input type="text" id="username" name="username" value="{$username}" required class="medium" maxlength="255">
 		{if $errorField == 'username'}
