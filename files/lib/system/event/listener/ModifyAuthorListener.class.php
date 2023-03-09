@@ -41,7 +41,6 @@ class ModifyAuthorListener implements IParameterizedEventListener
             ) {
                 return;
             }
-            $data = 
             $action = new EventAction([$eventObj->getReturnValues()['returnValues']], 'update', ['data' => $data]);
         } else {
             $eventObjects = [];

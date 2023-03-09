@@ -23,7 +23,8 @@ class AuthorAddListener implements IParameterizedEventListener
     /**
      * @param \calendar\form\EventEditForm $eventObj
      */
-    public function readFormParameters($eventObj) {
+    public function readFormParameters($eventObj)
+    {
         if (isset($_POST['username']) && \is_string($_POST['username'])) {
             $eventObj->additionalFields['authorname'] = $_POST['username'];
         }
@@ -32,7 +33,8 @@ class AuthorAddListener implements IParameterizedEventListener
     /**
      * @param \calendar\form\EventEditForm $eventObj
      */
-    public function validate($eventObj) {
+    public function validate($eventObj)
+    {
         if (!array_key_exists('authorname', $eventObj->additionalFields)) {
             throw new UserInputException('username');
         }
@@ -46,7 +48,8 @@ class AuthorAddListener implements IParameterizedEventListener
     /**
      * @param \calendar\form\EventEditForm $eventObj
      */
-    public function assignVariables($eventObj) {
+    public function assignVariables($eventObj)
+    {
         if (isset($eventObj->event)) {
             $username = $eventObj->event->username;
         } else {
