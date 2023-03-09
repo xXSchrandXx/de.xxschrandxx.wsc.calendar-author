@@ -31,15 +31,15 @@ class ModifyAuthorListener implements IParameterizedEventListener
             'username' => $eventObj->getParameters()['data']['authorname'],
             'userID' => $eventObj->getParameters()['data']['authorID']
         ];
-        if (WCF::getSession()->getPermission('user.calendar.deactivate')) {
-            $data['isDisabled'] = 1;
-        }
         if ($action == 'create') {
+            if (!WCF::getSession()->getPermission('user.calendar.activate')) {
+                $data['isDisabled'] = 1;
+            }
             if (
                 $eventObj->getParameters()['data']['authorname'] === $eventObj->getParameters()['data']['username'] &&
                 $eventObj->getParameters()['data']['authorID'] === $eventObj->getParameters()['data']['userID']
-                ) {
-                    return;
+            ) {
+                return;
             }
             $data = 
             $action = new EventAction([$eventObj->getReturnValues()['returnValues']], 'update', ['data' => $data]);
