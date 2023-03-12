@@ -32,7 +32,7 @@ class ModifyAuthorListener implements IParameterizedEventListener
             'userID' => $eventObj->getParameters()['data']['authorID']
         ];
         if ($action == 'create') {
-            if (!WCF::getSession()->getPermission('user.calendar.activate')) {
+            if (!WCF::getSession()->getPermission('user.calendar.activateCreatedAuthor')) {
                 $data['isDisabled'] = 1;
             }
             if (

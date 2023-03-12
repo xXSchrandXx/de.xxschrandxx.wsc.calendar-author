@@ -4,8 +4,8 @@
 	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/language.xsd">
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.user.calendar.addAuthor"><![CDATA[Can change author]]></item>
-		<item name="wcf.acp.group.option.user.calendar.activate"><![CDATA[Create Enabled]]></item>
-		<item name="wcf.acp.group.option.user.calendar.activate.description"><![CDATA[If disabled, events will be created with another author disabled.]]></item>
+		<item name="wcf.acp.group.option.user.calendar.activateCreatedAuthor"><![CDATA[Create Enabled]]></item>
+		<item name="wcf.acp.group.option.user.calendar.activateCreatedAuthor.description"><![CDATA[If disabled, events will be created with another author disabled.]]></item>
 	</category>
 	<category name="calendar.event">
 		<item name="calendar.event.author"><![CDATA[Author]]></item>
